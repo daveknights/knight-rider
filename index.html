@@ -35,42 +35,8 @@
         #sky {
             opacity: .5;
         }
-
-        #flame-1 {
-            animation: flame1 .4s infinite alternate linear;
-            opacity: 1;
-        }
-        #flame-2 {
-            animation: flame2 .4s infinite alternate linear;
-            opacity: 0.25;
-        }
-
-        /* @keyframes flame1 {
-            0% {
-                opacity: 0.25;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @keyframes flame2 {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.25;
-            } */
-        }
     </style>
     <body>
-        <!-- <canvas id="granim-basic" width="500" height="300"></canvas> -->
-
-        <!-- <div>
-            <canvas id="granim-flames" width="500" height="500"></canvas>
-            <img id="flame-1" src="flames-1.png" width="500" alt="">
-            <img id="flame-2"  src="flames-2.png" width="500" alt="">
-        </div> -->
-
         <div>
             <img src="kitt.jpg" alt="">
             <canvas id="lights" width="160" height="20"></canvas>
@@ -79,37 +45,7 @@
         <cite>Image from TV series Knight Rider, created by Glen A. Larson, owned by Universal Studios.</cite>
 
         <script>
-            // var granimlogoInstance = new Granim({
-            //     element: '#granim-flames',
-            //     direction: 'radial',
-            //     isPausedWhenNotInView: true,
-            //     states : {
-            //         "default-state": {
-            //             gradients: [
-            //                 ['#ffffff', '#f0891a'],
-            //                 ['#ffffff', '#f0d41a'],
-            //                 ['#ffffff', '#f0481a']
-            //             ],
-            //             transitionSpeed: 1000
-            //         }
-            //     }
-            // });
 
-            // var granimBasicInstance = new Granim({
-            //     element: '#granim-basic',
-            //     direction: 'left-right',
-            //     isPausedWhenNotInView: true,
-            //     states : {
-            //         "default-state": {
-            //             gradients: [
-            //                 ['#ff9966', '#ff5e62'],
-            //                 ['#00F260', '#0575E6'],
-            //                 ['#e1eec3', '#f05053']
-            //             ]
-            //         }
-            //     }
-            // });
-            //
             var granimLightInstance = new Granim({
                 element: '#lights',
                 direction: 'left-right',
@@ -119,21 +55,14 @@
                     "default-state": {
                         gradients: [
                             [
-                                // { color: '#fd1d1d', pos: 0 },
                                 { color: '#fd1d1d', pos: 0 },
-                                // { color: '#ffffff', pos: .2 },
                                 { color: '#f4c889', pos: .1 },
                                 { color: '#fd1d1d', pos: .5 },
 
                             ], [
                                 { color: '#fd1d1d', pos: .5 },
-                                // { color: '#ffffff', pos: .7 },
                                 { color: '#f4c889', pos: .9 },
                                 { color: '#fd1d1d', pos: 1 },
-
-                                // { color: '#40e0d0', pos: 0 },
-                                // { color: '#ff8c00', pos: .2 },
-                                // { color: '#ff0080', pos: .5 }
                             ],
                         ],
                         transitionSpeed: 500
